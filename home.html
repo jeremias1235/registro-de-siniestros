@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Asegurate Global</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+</head>
+<body>
+<!-- menu -->
+<section style="position: relative;">
+	<div class="container menu px-sm-0 px-xl-4">
+		<div class="logo_menu">
+			<a href="">
+				<img src="assets/img/Mesa-de-trabajo-3.png" width="100%" height="100%">
+			</a>
+		</div>
+		<div class="icono_menu">
+			<div class="lineas_menu"></div>
+			<div class="lineas_menu"></div>
+			<div class="lineas_menu"></div>
+			<i class="fas fa-times"></i>
+		</div>
+		<div class="list_menu">
+			<ul style="list-style-type:none">
+				<li>
+					<a href="">Inicio</a>
+					<div class="linea"></div>
+				</li>
+				<li>
+					<a href="">Registrar siniestro</a>
+					<div class="linea"></div>
+				</li>
+				<li>
+					<a href="">Iniciar sesion</a>
+					<div class="linea"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu_celular">
+		<div class="px-4 px-sm-5 submenu">
+			<div>
+				<a href="">Inicio</a>
+			</div>
+			<div class="linea_menu"></div>
+			<div>
+				<a href="">Registrar Siniestro</a>
+			</div>
+			<div class="linea_menu"></div>
+			<div>
+				<a href="">Iniciar sesion</a>
+			</div>
+			<div class="linea_menu"></div>
+		</div>
+	</div>
+</section>
+<!-- fin de menu -->
+<section class="fondo_primero">
+	<div class="container container_seguro">
+		<div class="seguro1 text-center text-md-left">
+			<h1>REGISTRO DE SINIESTROS<b> seguros de salud internacionales</b></h1>
+			<button class="comprar mt-1">INICIAR SESION PARA VER SU REGISTRO</button>
+		</div>
+		<div class="seguro2 px-3 ">
+			<div class="div_videos_seguro">
+							
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- iniciando el footer -->
+<footer>
+	<div class="container container_footer">
+		<div class="icono_sociales mr-1">
+			<a href="" class="btn px-0 py-1">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</div>
+		<div class="icono_sociales ml-1">
+			<a href="" class="btn px-0 py-1">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</div>
+	</div>
+</footer>
+<!-- fin del footer -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+	var estado="inicial"
+		$('.icono_menu').click(function(){
+			 if(estado=="inicial"){
+			 	$('.menu_celular').css('display','block');
+			 	$('.lineas_menu').css('display', 'none');
+			 	$('.fas').css('display','block');
+			 	 estado="click";
+			 }else
+			 {
+			 	$('.menu_celular').css('display','none');
+			 	$('.lineas_menu').css('display', 'block');
+			 	$('.fas').css('display','none');
+			 	 estado="inicial";
+			 }
+		});
+</script>
+</body>
+</html>

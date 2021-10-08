@@ -11,8 +11,8 @@ $pass = $_POST['contrasena'];
 
 $clave =  password_hash($pass, PASSWORD_DEFAULT);
 
-$sql = "SELECT usuario, pass FROM usuarios where usuario = '$usuario' and pass = '$clave'";
-$result=mysqli_query($conexion,$sql);
+$sql = "SELECT usuario, pass FROM usuarios where usuario = '$usuario' and pass = '$pass' ";
+$result=mysqli_query($conn,$sql);
 
 if(mysqli_num_rows($result) > 0){  /* realiza verificacion en tuplas, buscando coincidencia de los registros*/
     $_SESSION['user']=$usuario;

@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- aki van los css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/estilo.css"> -->
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -22,12 +23,13 @@
         <div class="form-group">
             <label for="">Password</label>
             <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Password" require>
+            <div class="g-recaptcha" data-sitekey="6LdfCbscAAAAABPAhhbBX6V9KeTEtf5OeTF9zVWj"></div>
+
         </div>
 
         <button type="button" class="btn btn-primary" id="entrar"><i class="fas fa-sign-in-alt"></i> Ingresar </button>
     </form>
 
-    <!-- aki van los scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -41,7 +43,7 @@
                 
                 var user = $('#usuario').val();
                 var pass = $('#contrasena').val();
-
+               
                     if (user == "") {
                         Swal.fire({
                             position: 'center',
@@ -63,6 +65,7 @@
                     }
             })
         })
+        
     </script>
 
 

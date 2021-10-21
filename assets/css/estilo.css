@@ -92,47 +92,10 @@
 	color: #9d9d9d;
 	font-size: 27px;
 }
-.menu_celular 
-{
-	width: 100%;
-	right: 0;
-	position: absolute;
-	z-index: 9999;
-	display: none;
-}
-.menu_celular::before
-{
-	content: '';
-	width: 100%;
-	height: 100vh;
-	background-color: #0000005c;
-	position: absolute;
-	z-index: -1;
-}
-.menu_celular .submenu
-{
-	background-color: #fff;
-	float: right;
-	width: 50%;
-	height: 30vh;
-	text-align: center;
-	padding-top: 30px;
-}
-.menu_celular .submenu .linea_menu
-{
-	width: 100%;
-	height: 1px;
-	background-color: #000;
-	margin-top: 7px;
-	margin-bottom: 7px;
-}
-.menu_celular .submenu div a
-{
-	color: #323a45;
-}
+
 .fondo_primero
 {
-	background-image: url('../img/24.png');
+	background-image: url('../img/image.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -274,33 +237,7 @@
 {
 	margin-left: 15px;
 }
-.container_nosotros .nosotros video
-{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.fondo_blog
-{
-	background-color: #4E91F2;
-	padding: 80px 0px 80px 0px;
-}
-.titulo_blog
-{
-	color: #FFFFFF;
-    font-family: "Raleway", Sans-serif;
-    font-size: 45px;
-    letter-spacing: 0px;
-}
-.descripcion_blog
-{
-	color: #FFFFFF;
-    font-family: "Raleway", Sans-serif;
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 1.4em;
-    letter-spacing: 0px;
-}
+
 .carousel-item .div_carousel
 {
 	display: flex;
@@ -433,52 +370,7 @@ footer .container_footer .icono_sociales a
 	color: #fff;
 
 }
-.input_contacto
-{
-	height: 40px;
-	padding: 0 15px;
-	color: #33475b;
-    background-color: #f5f8fa;
-    border: 1px solid #cbd6e2;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 22px;
-    border-radius: 10px;
-}
-.btn_enviar_contacto
-{
-	width: 100%;
-	background-color: #4E91F2;
-	border: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 5px;
-	color: #ffffff;
-	font-weight: 700;
-	text-transform: uppercase;
-	transition: transform .2s;
-}
-.btn_enviar_contacto:hover
-{
-	border: 1px solid #4E91F2;
-	color: #4E91F2;
-	background-color: #ffffff;
-	transform: scale(1.1);
-}
-.textarea_contac
-{
-	height: 100px;
-}
-.color_iguales
-{
-	color: #33475b;
-    font-family: arial, helvetica, sans-serif;
-}
-.subtitulos_contacto
-{
-	font-weight: 600;
-}
+
 .card_blog .card
 {
 	width: 100%;
@@ -526,29 +418,7 @@ footer .container_footer .icono_sociales a
 	color: #00bae1;
 	width: 100%;
 }
-.blog_detalle
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.blog_detalle .img_blog_detalle
-{
-	width: 100%;
-	height: 350px;
-}
-.blog_detalle .img_blog_detalle img
-{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.blog_detalle .descripcion_blog_detalle
-{
-	width: 100%;
-	color: #717c89;
-}
+
 
 @media (min-width: 480px)
 {

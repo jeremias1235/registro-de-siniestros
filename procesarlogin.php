@@ -8,19 +8,26 @@ $conn = conexion();
 
 $usuario = $_POST['usuario'];
 $pass = $_POST['contrasena'];
+		
+$sql = "SELECT pass FROM usuarios where usuario = '$usuario'";
 
-$clave =  password_hash($pass, PASSWORD_DEFAULT);
-
-$sql = "SELECT usuario, pass FROM usuarios where usuario = '$usuario' and pass = '$pass' ";
 $result=mysqli_query($conn,$sql);
 
-if(mysqli_num_rows($result) > 0){  /* realiza verificacion en tuplas, buscando coincidencia de los registros*/
-    $_SESSION['user']=$usuario;
-    header('Location: panel.php');
+if(mysqli_num_rows($result) > 0){
+   $passHash = mysqli_fetch_assoc($result);
+   
+    if (password_verify($pass, $passHash['pass'])) {
+         session_start();
+         $_SESSION['user']=$usuario;
+         header('Location: panel.php');
+    } else {
+        header('Location: login.php');
+    }
+    
+   
 }else{
     header('Location: login.php');
 }
-
 
 
 
